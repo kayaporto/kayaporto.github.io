@@ -121,7 +121,7 @@ nav {
     margin-bottom: 48px;
     padding: 16px 24px;
     background: #fbf3ea;
-    border: 1px solid #c97d7d;
+    border: 1px solid #622828;
     border-radius: 12px;
 }
 
@@ -131,7 +131,7 @@ nav h1 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #000;
+    color: #5c2a2a;
 }
 
 #nav-ul {
@@ -143,7 +143,7 @@ nav h1 {
 }
 
 .nav-li a {
-    color: #a85959;
+    color: #944343;
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
@@ -157,5 +157,106 @@ nav h1 {
     color: #fff;
 }
 
+.content h1 {
+  color: rgb(89, 38, 8);
+}
 
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #783838;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fcf2d2;
+  border: 1px solid #8d3333;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #5e1f1f;
+  color: #fff;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
+}
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+    color: #8d3333;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    width: 100%;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
+}
 
