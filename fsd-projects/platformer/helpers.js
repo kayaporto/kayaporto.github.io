@@ -847,6 +847,7 @@ function createCollectable(
     var image = document.createElement("img");
     image.src = collectableList[type].image;
     image.id = "image" + collectables.length;
+    image.class = type;
     collectables.push({
       image,
       x,

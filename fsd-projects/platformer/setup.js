@@ -97,9 +97,9 @@ let animationDetails = {};
 
 var collectableList = {
   database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
+  diamond: { image: "https://dinopixel.com/preload/0921/Litten--Pokemon-sun--and-moon.webp" },
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  max: { image: "https://pixeljoint.com/files/icons/full/rowlet_original_base_5x.png" },
+  steve: { image: "https://i.pinimg.com/originals/13/ce/4d/13ce4d61f016a8d608f9642a8167d4ad.gif" },
 };
