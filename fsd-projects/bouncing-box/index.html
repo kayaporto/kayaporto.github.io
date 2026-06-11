@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-image: url("https://yt3.googleusercontent.com/xt5gmyf2cyGXU_ORWimpknjdJ-jRU3CoBgyRGKUNfbsTHu4D4oYZJd0bDligGaxE4xInIXzZLA=s900-c-k-c0x00ffffff-no-rj");
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -21,6 +21,7 @@
 
       .board {
         height: 100vh;
+        background-image: url("https://i.ytimg.com/vi/HP7ytMp806c/hqdefault.jpg");
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -55,8 +56,9 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
+        function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
+          box.css("top", newPositionY);
         }
 
         // changes the text displayed on the Box
@@ -72,9 +74,10 @@
         var positionX = 0;
         var points = 0;
         var speed = 10;
-
-
-
+        var randNum = Math.random() * 100; 
+        var positionY;
+        var speedY;
+        var boardHeight = jQuery(window).height();
 
 
         /**
@@ -83,7 +86,7 @@
          * If the box drifts off the screen, turn it around!
          */
           function update() {
-          moveBoxTo(positionX);
+          moveBoxTo(positionX, positionY);
           positionX += speed;
         if (positionX > boardWidth){
           speed *= -1;
@@ -118,3 +121,5 @@
     </script>
   </body>
 </html>
+
+
