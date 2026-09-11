@@ -28,6 +28,11 @@ $(document).ready(function () {
 
   // This line produces most of the data array and stores it in the variable "dataShapes"
   const dataShapes = generateShapeData();
+  var shape = {
+    color: "blue",
+    shape: "circle",
+    repeat: 3
+  }
   var currentIndex = 0;
 
   /////////////////////////////////////////////////
