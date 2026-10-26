@@ -27,22 +27,37 @@ $(document).ready(function () {
   };
 
   // This line produces most of the data array and stores it in the variable "dataShapes"
-  const dataShapes = generateShapeData();
- 
-  //var currentIndex = 0;
+  const dataShapes = generateShapeData(); 
+
+  var currentIndex = 0;
 
   /////////////////////////////////////////////////
   // ALL OF YOUR CODE SHOULD GO BELOW HERE , TODO 0 COMPLETE ////////
   /////////////////////////////////////////////////
 
-  // TODO 1: create a new shape object and add it to the array
-  var shape = {
+ const shape = {
     color: "blue",
     shape: "circle",
     repeat: 3
-  }
+  };
+
+  dataShapes.push(shape)
+
+  // TODO 0 complete
+
+   // TODO 1: create a new shape object and add it to the array
+
+ 
   // TODO 2: add a new property to all data shapes
-  
+  for (const currentShape of dataShapes) {
+    if (currentShape.color === "red") {
+      currentShape.goodBehavior = "bounce";
+    } else if (currentShape.color === "blue") {
+      currentShape.goodBehavior = "blink";
+    } else {
+      currentShape.goodBehavior = "spin";
+    }
+  }
 
   // TODO 3-a: add a function that handles the static display type
   
